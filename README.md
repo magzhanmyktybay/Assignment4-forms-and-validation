@@ -14,3 +14,9 @@ Reacreated the contact form by Bootstraps form classes, grid system, placeholder
 ### Task 3
 ![task3](images/image3.png)\
 Applied Bootstraps validation feedback classes and showed feedback messages.
+## Part 3
+### Task 4
+![task4](images/image4.png)\
+Created registration form, used Bootstrap Grid and HTML5 validation.
+## Conclusion
+In this assignment I learnd how to create relative forms with validation by using HTML, Bootstrap, Script. It was interesting and I could use information from lectures in practice. I like that I did in this Assigment.

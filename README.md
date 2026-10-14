@@ -2,5 +2,5 @@
 ## Magzhan Myktybay SE-2540
 ## Part 1
 ### Task 0
-![task0](images/image.png)\
-Simple HTML form each of them has label except button.
+![task0](images\image.png)\
+Simple HTML form each of them has label except submit button.# Assignment4-forms-and-validation

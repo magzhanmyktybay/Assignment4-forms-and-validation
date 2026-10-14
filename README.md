@@ -3,4 +3,4 @@
 ## Part 1
 ### Task 0
 ![task0](images/image.png)\
-Simple HTML form each of them has label except submit button.
+Simple HTML form each field has label except submit button.

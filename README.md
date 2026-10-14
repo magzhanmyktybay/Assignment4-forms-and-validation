@@ -11,3 +11,6 @@ Added validation attributes (required, minlength, maxlength, type) and tested th
 ### Task 2
 ![task2](images/image2.png)\
 Reacreated the contact form by Bootstraps form classes, grid system, placeholder and helper text.
+### Task 3
+![task3](images/image3.png)\
+Applied Bootstraps validation feedback classes and showed feedback messages.

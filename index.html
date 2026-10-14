@@ -9,20 +9,26 @@
 </head>
 <body>
     <div class="container py-5">
-        <form class="row g-3">
+        <form class="row g-3" id="contactForm" novalidate>
             <div class="col-md-6">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Magzhan Myktybay" required minlength="2" maxlength="50">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Name is required (2 to 50 characters).</div>
                 <div class="form-text">From 2 to 50 characters.</div>
             </div>
             <div class="col-md-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com" required maxlength="100">
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Email is required and must be valid.</div>
                 <div class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="col-12">
                 <label for="message" class="form-label">Message</label>
                 <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required maxlength="500"></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Message is required.</div>
                 <div class="form-text">Maximum 500 characters.</div>
             </div>
             <div class="col-12">
@@ -30,5 +36,33 @@
             </div>
         </form>
     </div>
+
+    <script>
+        const form = document.getElementById('contactForm');
+        const fields = form.querySelectorAll('.form-control');
+
+        function validate(field) {
+            if (field.checkValidity()) {
+                field.classList.remove('is-invalid');
+                field.classList.add('is-valid');
+            } else {
+                field.classList.remove('is-valid');
+                field.classList.add('is-invalid');
+            }
+        }
+
+        form.addEventListener('submit', function (event) {
+            fields.forEach(validate);
+            if (!form.checkValidity()) {
+                event.preventDefault();
+            }
+        });
+
+        fields.forEach(function (field) {
+            field.addEventListener('input', function () {
+                validate(field);
+            });
+        });
+    </script>
 </body>
 </html>
